@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\СКФУ\\Лаблораторные\\Основы разработки ПО\\Labs_C-\\Labs_C#\\Labs_C#\\Labs_C#.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\СКФУ\\Лабораторные\\Основы разработки ПО\\Labs_C-\\Labs_C#\\Labs_C#\\Labs_C#.csproj",
       "projectName": "Labs_C#",
-      "projectPath": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\СКФУ\\Лаблораторные\\Основы разработки ПО\\Labs_C-\\Labs_C#\\Labs_C#\\Labs_C#.csproj",
+      "projectPath": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\СКФУ\\Лабораторные\\Основы разработки ПО\\Labs_C-\\Labs_C#\\Labs_C#\\Labs_C#.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\СКФУ\\Лаблораторные\\Основы разработки ПО\\Labs_C-\\Labs_C#\\Labs_C#\\obj\\",
+      "outputPath": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\СКФУ\\Лабораторные\\Основы разработки ПО\\Labs_C-\\Labs_C#\\Labs_C#\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -72,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
