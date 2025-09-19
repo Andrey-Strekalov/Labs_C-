@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,7 +28,7 @@ namespace Labs_C_
         }
 
 
-        public double Integral(double a, double b)
+        public static double Integral(double a, double b)
         {
             return (b * b - a * a) / 2.0;
 
@@ -54,6 +53,19 @@ namespace Labs_C_
 
         public void PrintInfo()
         {
+            Console.WriteLine("       y");
+            Console.WriteLine("       ^");
+            Console.WriteLine("       │");
+            Console.WriteLine("       │   *");
+            Console.WriteLine("       │  *");
+            Console.WriteLine("       │ *");
+            Console.WriteLine("       │*");
+            Console.WriteLine("───────────────-> x");
+            Console.WriteLine("      *│");
+            Console.WriteLine("     * │");
+            Console.WriteLine("    *  │");
+            Console.WriteLine("   *   │");
+            Console.WriteLine();
             Console.WriteLine("Функция: y = x");
             Console.WriteLine($"Интеграл от {a} до {b}: {Integral(a, b)}");
             Console.WriteLine($"Длина отрезка: от ({a};{a}) до ({b};{b}): {CalculateSegmentLength(a, b)}");
@@ -61,13 +73,27 @@ namespace Labs_C_
 
         public void PrintInfo(ConsoleColor bg, ConsoleColor fg)
         {
-            Console.BackgroundColor = bg;
             Console.ForegroundColor = fg;
+            Console.BackgroundColor = bg;
+            Console.Clear();
             PrintInfo();
         }
 
         public void PrintInfo(double a, double b)
         {
+            Console.WriteLine("       y");
+            Console.WriteLine("       ↑");
+            Console.WriteLine("       │");
+            Console.WriteLine("       │   *");
+            Console.WriteLine("       │  *");
+            Console.WriteLine("       │ *");
+            Console.WriteLine("       │*");
+            Console.WriteLine("───────────────→ x");
+            Console.WriteLine("      *│");
+            Console.WriteLine("     * │");
+            Console.WriteLine("    *  │");
+            Console.WriteLine("   *   │");
+            Console.WriteLine();
             Console.WriteLine("Функция: y = x");
             Console.WriteLine($"Интеграл от {a} до {b}: {Integral(a, b)}");
             Console.WriteLine($"Длина отрезка: от ({a};{a}) до ({b};{b}): {CalculateSegmentLength(a, b)}");

@@ -26,7 +26,12 @@ public class MainClass
         Graph graph = new Graph();
 
 #if DEBUG
-        graph = new Graph(-3.5, 11);
+        double a, b;
+        Console.Write("a = ");
+        a = Convert.ToDouble(Console.ReadLine());
+        Console.Write("b = ");
+        b = Convert.ToDouble(Console.ReadLine());
+        graph = new Graph(a, b);
         graph.PrintInfo(ConsoleColor.Yellow, ConsoleColor.Blue);
 #endif
 #if !DEBUG
