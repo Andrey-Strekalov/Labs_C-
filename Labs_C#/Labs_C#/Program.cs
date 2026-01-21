@@ -1,30 +1,50 @@
 ﻿using System;
 using System.IO;
 
+
 namespace Labs_C_;
+
+
 
 public class MainClass
 {
 
     public static void Main()
     {
+
+
 #if !DEBUG
+
         TextWriter save_out = Console.Out;
         TextReader save_in = Console.In;
-        var new_out = new StreamWriter(@"output.txt");
-        var new_in = new StreamReader(@"input.txt");
+        var new_out = new StreamWriter(@"graph_output.txt");
+        var new_in = new StreamReader(@"graph_input.txt");
         Console.SetOut(new_out);
         Console.SetIn(new_in);
-#endif
 
-        LineSegment lineSegment = new LineSegment();
-        lineSegment.Load();
-        lineSegment.PrintInfo();
+#endif
+        Graph graph = new Graph();
+
+#if DEBUG
+        double a, b;
+        Console.Write("a = ");
+        a = Convert.ToDouble(Console.ReadLine());
+        Console.Write("b = ");
+        b = Convert.ToDouble(Console.ReadLine());
+        graph = new Graph(a, b);
+        graph.PrintInfo(ConsoleColor.Yellow, ConsoleColor.Blue);
+#endif
+#if !DEBUG
+        graph = graph.CreateGraphFromFile();
+        graph.PrintInfo(graph.a, graph.b);
+#endif
 #if !DEBUG
         Console.SetOut(save_out); new_out.Close();
         Console.SetIn(save_in); new_in.Close();
-#else
+#endif
+#if !DEBUG
         Console.ReadKey();
 #endif
+
     }
 }
